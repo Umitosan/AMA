@@ -1,0 +1,30 @@
+
+<div class="banner">
+	<div class="title_box">
+		<h1 id="title">Ask Me Anything</h1>
+	</div>
+</div>
+
+<div id="navbar" class="navbar">
+	<ul>
+		<li><a href="http://localhost:4200/">Home</a></li>
+    <li><a href="https://github.com/Umitosan">My Github</a></li>
+    <li><a href="https://github.com/Umitosan/AMA">Github project</a></li>
+	</ul>
+</div>
+
+<div class="container">
+
+	<h1>What would you like to ask?</h1>
+
+	<div class="new-q-btn">
+			{{new-question saveQuestion="saveQuestion"}}
+	</div>
+
+	<ul>
+	  {{#each model as |question|}}
+	    {{question-tile question=question destroyQuestion="destroyQuestion"}}
+	  {{/each}}
+	</ul>
+
+</div>

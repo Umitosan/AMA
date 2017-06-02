@@ -48,6 +48,7 @@ ember server
 |The app has a path to each message's details as a link|the user clicks a 'details' link on the main page|the browser navigates to a new page showing the message's details|
 |The app allows modification of a question's details|after navigating to a specific question detail page, the user clicks a button to 'edit' the question's contents and click's 'save'|the question's body and/or author is then updated on the page|
 |The app allow answers to be posted and attached to a question|the user navigates to a question's detail page, clicks a button to add an answer, enters the answer text and author, then clicks a 'save' button|the answer appears under the question|
+|The app has a nav bar for easy |||
 
 ## Further Reading / Useful Links
 
@@ -62,5 +63,7 @@ ember server
 * Dominic Brown
 
 ## License
+
+_This is web page is licensed under the MIT License._
 
 Copyright © 2017 **_Dominic Brown_**
