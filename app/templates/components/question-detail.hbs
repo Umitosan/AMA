@@ -1,9 +1,9 @@
 <li id="questions">
-  {{question.body}}
+  <span id="q-body"> {{question.body}} </span>
   <br>
-  Note: {{question.note}}
+  <span id="note"> {{question.note}} </span>
   <br>
-  By - {{question.author}}
+  <span id="author"> ~ {{question.author}} </span>
 </li>
 
 <button class="btn btn-default btn-sm" {{action 'delete' question}}>Delete</button>
