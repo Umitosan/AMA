@@ -1,1 +1,20 @@
-{{yield}}
+{{#if updateQuestionForm}}
+  <h4>Update {{question.author}}'s question:</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="body">Question</label>
+        {{textarea value=body id="body" placeholder=question.body}}
+      </div>
+
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author" placeholder=question.author}}
+      </div>
+
+      <button class="btn btn-default btn-sm" {{action 'update' question}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn btn-default btn-sm"  {{action 'updateQuestionForm'}}>Update</button>
+{{/if}}

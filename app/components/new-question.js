@@ -5,8 +5,7 @@ export default Ember.Component.extend({
   actions: {
     questionFormShow() {
       this.set('addNewQuestion', true);
-      // clear the inputs previous info
-      this.set('author', '');
+      this.set('author', '');  // clear the inputs previous info
       this.set('body', '');
     },
     saveQuestion() {
