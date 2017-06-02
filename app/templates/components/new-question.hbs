@@ -1,18 +1,17 @@
 {{#if addNewQuestion}}
-  <h1>New Question</h1>
   <div>
     <form>
+      <div class="form-group">
+        <label for="body">Question</label>
+        {{textarea value=body id="body"}}
+      </div>
+
       <div class="form-group">
         <label for="author">Author</label>
         {{input value=author id="author"}}
       </div>
 
-      <div class="form-group">
-        <label for="body">Body</label>
-        {{input value=body id="body"}}
-      </div>
-
-      <button class="btn btn-default btn-sm" {{action 'saveQuestion'}}>Save</button>
+      <button class="btn btn-default btn-sm" {{action 'saveQuestion'}}>Post it!</button>
     </form>
   </div>
 {{else}}
