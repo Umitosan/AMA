@@ -1,6 +1,7 @@
 <li id="questions">
-  {{question.body}} <br>
+  {{question.body}}
+  <br>
   By - {{question.author}}
 </li>
 
-<button class="btn btn-default btn-sm" {{action 'delete' question}}>Delete</button>
+{{#link-to 'question' question.id}}Edit question{{/link-to}}

@@ -22,12 +22,12 @@
 	</div>
 
 	<br>
-	<h4>Total number of posts: {{model.length}}</h4>
+	<h4>Total Questions: {{model.length}}</h4>
 
 	<ul id="all-qs">
 
 	  {{#each model as |question|}}
-	    {{question-tile question=question destroyQuestion="destroyQuestion"}}
+	    {{question-tile question=question}}
 	  {{/each}}
 	</ul>
 
