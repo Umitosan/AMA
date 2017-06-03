@@ -6,6 +6,11 @@ export default Ember.Component.extend({
     updateQuestionForm() {
       this.set('updateQuestionForm', true);
     },
+    delete(question) {
+      if (confirm('Delete question?')) {
+        this.sendAction('destroyQuestion', question);
+      }
+    },
     update(question) {
       var params = {
         body: this.get('body'),

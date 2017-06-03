@@ -1,7 +1,7 @@
-<h3>Answers</h3>
 
+<hr>
+<h3>Answers</h3>
 {{#if addNewAnswer}}
-<h1>New Answer</h1>
   <div>
     <form>
       <div class="form-group">
@@ -19,8 +19,19 @@
   <button class="btn btn-default btn-sm" {{action 'answerFormShow'}}>New Answer</button>
 {{/if}}
 
-<ul>
+
+<div id="answers">
   {{#each question.answers as |answer|}}
-    <li>{{answer.content}} ~by {{answer.author}}</li>
+    <p><span id="ans">A:  </span> {{answer.content}} </p>
+    <p class="author"> ~ {{answer.author}} </p>
   {{/each}}
-</ul>
+</div>
+
+
+<!-- <div id="questions">
+  <span id="q-body"> {{question.body}} </span>
+  <br>
+  <span id="note"> {{question.note}} </span>
+  <br>
+  <span class="author"> ~ {{question.author}} </span>
+</div> -->
